@@ -1,0 +1,12 @@
+import folium
+m=folium.Map(location=[20.5937, 78.9629],zoom_start=5)
+folium.Marker([28.6139,77.2090],popup="Delhi").add_to(m)
+folium.Marker([22.5726,88.3639],popup="Kolkata").add_to(m)
+folium.Marker([19.0760,72.8777],popup="Mumbai").add_to(m)
+folium.Marker([13.0827,80.2707],popup="Chennai").add_to(m)
+folium.Marker([24.098827,88.267929],popup="Berhampore").add_to(m)
+folium.Circle([24.5713,73.6822],radius=50000,color='blue',fill=True,popup="Lake Pichola").add_to(m)
+m.save('map.html')
+print('')
+print('Map Generated ✅ , please check 😄')
+print('')
